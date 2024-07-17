@@ -1,0 +1,367 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+}
+html {
+  font-size: 20px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 10%;
+  background: #ccc9c2;
+  box-shadow: 0 0.1rem 0.5rem;
+  z-index: 1000;
+}
+
+.header .navbar {
+  display: flex;
+  gap: 1rem; /* Space between each link */
+}
+
+.header .navbar a {
+  font-size: 1.5rem;
+  color: black;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.header .navbar a:hover {
+  color: darkblue;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .header .navbar {
+    flex-direction: column; /* Stack navbars */
+    align-items: center;
+  }
+
+  .header .navbar a {
+    margin: 0.5rem 0; /* Adjust margin for vertical layout */
+  }
+}
+
+.hero {
+  background-image: url(images/alexander-redl-d3bYmnZ0ank-unsplash.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150vh;
+  background-size: cover;
+  background-position: center;
+}
+.content {
+  text-align: center;
+  color: #1462f5;
+}
+.content h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.content p {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.content .btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #14d3f5;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.content .btn:hover {
+  background-color: lightblue;
+}
+section {
+  padding: 4rem 2rem;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ddd;
+}
+.container .title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #222;
+  letter-spacing: 1.5px;
+  padding: 50px 0px;
+}
+.container .title h1::after {
+  content: "";
+  height: 6px;
+  width: 180px;
+  background-color: #222;
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 90%;
+  height: auto;
+  margin-left: 80px;
+}
+.about-content .article h2 {
+  font-size: 22px;
+  color: black;
+  padding-bottom: 15px;
+}
+
+.article {
+  flex: 1;
+  background-color: #eee;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.article p {
+  font-size: 19px;
+  line-height: 1.5;
+  color: #222;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-section img {
+  max-width: 90%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article,
+  .image-section {
+    flex: none;
+    width: 100%;
+  }
+}
+#services {
+  padding: 4rem 2 rem;
+  background-color: #c2bec0;
+}
+#services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: black;
+}
+
+/* my styles for the services container */
+#workouts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5 rem;
+}
+/*per workout style */
+.workout {
+  background: #c2bec0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.workout:hover {
+  transform: translateY(-10px);
+}
+
+.workout img {
+  width: 100%;
+  height: auto;
+}
+
+.workout h3 {
+  font-size: 1.5rem;
+  color: #1462f5;
+  margin: 1rem;
+}
+
+.workout p {
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.workout p strong {
+  color: #333;
+}
+#bookClassForm {
+  margin-top: 40px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  width: 400px;
+  max-width: 100%;
+  box-shadow: 0 0 10px lightgray;
+}
+#bookClassForm h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+#bookClassForm label {
+  display: block;
+  margin-top: 20px;
+  color: black;
+}
+#bookClassForm input {
+  max-width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#bookClassForm button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #14d3f5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#bookClassForm button:hover {
+  background-color: #0ca8c8;
+}
+#blog h2 {
+  text-align: center;
+}
+.blogpost {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.blogpost h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #d6aa92;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.blogpost h4:hover {
+  color: lightblue;
+}
+.blogpost p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#contact {
+  position: relative;
+  min-height: 80vh;
+  padding: 50px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(images/premium_photo-1670505060574-b08479270d1b.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+#contact .reachus {
+  position: absolute;
+  top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+#contact h2 {
+  color: black;
+  margin-bottom: 10px;
+  font-size: 2.5em;
+}
+
+#contact .reachus p {
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+#contact .mycontainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  width: 100%;
+}
+
+#contact .box {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 30%;
+  max-width: 300px;
+  text-align: center;
+  color: #fff;
+}
+
+#contact .icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #ffdd57;
+}
+
+#contact .text h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#contact .text p {
+  font-size: 1em;
+  color: white;
+}

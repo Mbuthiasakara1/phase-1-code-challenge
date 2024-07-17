@@ -1,0 +1,77 @@
+{
+  "workouts": [
+    {
+      "id": 1,
+      "day": "Monday",
+      "name": "Cardio & Legs",
+      "description": "30 minutes of running on the treadmill followed by squats, lunges, and leg press.",
+      "imageUrl": "https://images.unsplash.com/photo-1521804906057-1df8fdb718b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D",
+      "schedule": "Mon - 6:00 AM"
+    },
+    {
+      "id": 2,
+      "day": "Tuesday",
+      "name": "Upper Body & Abs",
+      "description": "Chest press, shoulder press, bicep curls, followed by planks, crunches, and leg raises.",
+      "imageUrl": "https://images.unsplash.com/photo-1434682881908-b43d0467b798?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D",
+      "schedule": "Tue - 7:00 AM"
+    },
+    {
+      "id": 3,
+      "day": "Wednesday",
+      "name": "Cardio & Back",
+      "description": "30 minutes of cycling followed by pull-ups, rows, and deadlifts.",
+      "imageUrl": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D",
+      "schedule": "Wed - 6:00 AM"
+    },
+    {
+      "id": 4,
+      "day": "Thursday",
+      "name": "Lower Body & Core",
+      "description": "Deadlifts, hamstring curls, and calf raises, followed by Russian twists, bicycle crunches, and hanging leg raises.",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1666736570873-36d95bd8ee3f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTd8fGZpdG5lc3N8ZW58MHx8MHx8fDA%3D",
+      "schedule": "Thu - 7:00 AM"
+    },
+    {
+      "id": 5,
+      "day": "Friday",
+      "name": "Full Body & Stretching",
+      "description": "Burpees, mountain climbers, and kettlebell swings, followed by full body stretching exercises.",
+      "imageUrl": "https://images.unsplash.com/photo-1550259979-ed79b48d2a30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjI1fHxmaXRuZXNzfGVufDB8fDB8fHww",
+      "schedule": "Fri - 6:00 AM"
+    }
+  ],
+  "blogPosts": [
+    {
+      "id": 1,
+      "title": "Getting Started with Fitness",
+      "content": "<p>Welcome to our first blog post! In this post, we'll discuss the basics of starting a fitness journey. It's important to set realistic goals, stay consistent, and keep track of your progress.</p>",
+      "author": "Jane larry",
+      "date": "2024-07-01"
+    },
+    {
+      "id": 2,
+      "title": "Top 10 Exercises for Beginners",
+      "content": "<p>Here are the top 10 exercises for beginners: Squats, Push-ups, Lunges, Plank, Jumping Jacks, Burpees, Mountain Climbers, Bicep Curls, Tricep Dips, and Crunches. These exercises will help you build strength and endurance.</p>",
+      "author": "John kelly",
+      "date": "2024-07-05"
+    },
+    {
+      "id": 3,
+      "title": "Benefits of Stretching",
+      "content": "<p>Stretching improves flexibility, reduces muscle tension, and enhances circulation. Incorporate stretching into your daily routine for better overall health.</p>",
+      "author": "Emily Johnson",
+      "date": "2024-07-10"
+    }
+  ],
+  "classbookings": [
+    {
+      "id": "0d17",
+      "className": "cardio",
+      "date": "2024-07-16",
+      "time": "00:02",
+      "yourName": "joy",
+      "email": "joy@gmail.com"
+    }
+  ]
+}
